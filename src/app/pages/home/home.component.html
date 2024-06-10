@@ -1,0 +1,26 @@
+<main class="main d-flex flex-column align-items-center">
+    <section class="main__interface d-flex justify-content-center align-items-center h-100">
+        <div class="main__presentation p-5">
+            <h1 class="main__title text-center">Bienvenue au petit village</h1>
+            <p class="main__description text-center fs-5">Nous sommes ravis de vous accueillir dans notre univers de figurines faites main, inspirées par les aventures d'Astérix et Obélix. Découvrez nos créations artisanales uniques, où chaque pièce capture l'esprit des célèbres Gaulois. Plongez dans notre collection et laissez-vous charmer par la magie de notre petit village.</p>
+        </div>
+    </section>
+    <section class="main__catalog product-catalog d-flex flex-column align-items-center">
+        <h2 class="product-catalog__title m-4" >Nos produis vendus</h2>
+        <div class="product-catalog__search-container container-fluid product_search m-4">
+
+            <form class="product-catalog__search-form d-flex" role="search">
+
+              <input class="product-catalog__search-input me-2" type="text" placeholder="Rechercher" aria-label="Rechercher" #searchString (keydown.enter)="filterByName(searchString.value)" (keydown.enter)="$event.preventDefault()"/>
+              <button class="product-catalog__search-button px-3 py-1 me-2" type="button" (click)="filterByName(searchString.value)">Rechercher</button>
+              <button type="button" class="product-catalog__sort-button bg-transparent d-flex justify-content-center align-items-center mx-2" (click)="toggleSortOrder(1)" ><i class="fa-solid fa-arrow-up-wide-short" style="color: #da001e;"></i></button>
+              <button type="button" class="product-catalog__sort-button bg-transparent d-flex justify-content-center align-items-center mx-2" (click)="toggleSortOrder(-1)"><i class="fa-solid fa-arrow-down-short-wide" style="color: #da001e;"></i></button>
+
+            </form>
+
+        </div>
+            <div class="product-catalog__list row g-4 h-100 justify-content-xl-center mx-4 mb-4">
+                <app-product-card class="col-lg-4 col-md-6 col-sm-12" *ngFor="let product of (productsTable | filterByName:search | sortByPrice:sortOrder )" [product]="product" />
+            </div>
+    </section>
+</main> 

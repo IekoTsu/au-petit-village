@@ -1,0 +1,20 @@
+  <header class="header">
+    <nav class="header__navbar navbar navbar-expand-lg bg-body-tertiary px-5">
+        <div class="header__container container-fluid flex-lg-column">
+          <a class="header__logo-link" [routerLink]="['home']"><img class="header__logo"  src="assets/img/logo-au-petit-villageV1.png" alt="Logo du charmant petit village"></a>
+          <button class="header__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="header__toggler-icon navbar-toggler-icon"></span>
+          </button>
+          <div class="header__collapse collapse navbar-collapse justify-content-end align-center" id="navbarNav">
+            <ul class="header__nav navbar-nav">
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" [routerLink]="['home']" [routerLinkActive]="['active']" >Accueil</a>
+              </li>
+              <li class="header__nav-item nav-item">
+                <a class="header__nav-link nav-link" [routerLink]="['about']" [routerLinkActive]="['active']">À propos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header> 

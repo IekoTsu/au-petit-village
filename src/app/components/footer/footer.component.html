@@ -1,0 +1,32 @@
+<footer class="footer">
+    <div class="footer__content p-5">
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="footer__section ">
+                <h5 class="footer__title fs-3">Au Petit Village</h5>
+                <ul class="footer__list list-unstyled">
+                    <li class="footer__item d-flex align-items-center fs-5 fw-semibold">Nous suivre :</li>
+                    <li class="footer__social-icons my-3">
+                        <a><i class="footer__icon fa-brands fa-square-instagram fa-2xl m-3"></i></a>
+                        <a><i class="footer__icon fa-brands fa-square-x-twitter fa-2xl m-3"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3  col-md-6">
+            <div class="footer__section">
+                <h5 class="footer__title fs-3">Liens utiles</h5>
+                <ul class="footer__list list-unstyled">
+                    <li class="footer__item d-flex align-items-top"><a [routerLink]="['home']" [routerLinkActive]="['active']"><i class="fa-solid fa-angle-right me-1 pt-1"></i> Accueil </a></li>
+                    <li class="footer__item d-flex align-items-top"><a [routerLink]="['about']" [routerLinkActive]="['active']" ><i class="fa-solid fa-angle-right me-1 pt-1"></i> À propos </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6  col-md-12">
+            <div class="footer__section ">
+                <a [routerLink]="['home']"><img class="footer__logo" src="/assets/img/logo-au-petit-villageV1.png" alt="Logo du charmant petit village"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>

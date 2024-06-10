@@ -1,0 +1,18 @@
+.card{
+    --bs-card-border-color: #FDD90B;
+    --bs-card-border-width: 2px;
+    --bs-card-title-color: #DA001E;
+    box-shadow: 0px 4px 10px;
+}
+
+.btn-primary {
+    --bs-btn-color: #151217;
+    --bs-btn-bg: #FDD90B;
+    --bs-btn-border-color :  #FDD90B;
+
+    --bs-btn-hover-bg: #e6b823 ;
+    --bs-btn-hover-border-color: #FDD90B;
+
+    --bs-btn-active-bg:#e6b823;
+    --bs-btn-active-border-color: #FDD90B;
+}

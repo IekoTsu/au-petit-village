@@ -1,0 +1,20 @@
+<main class="product-page d-flex justify-content-center">
+    <section class="product-page__section row m-4 ">
+        <div class="product__image-container col-12 col-lg-6 "> 
+            <div class="product__image-wrapper">
+                <img class="product__img" src="{{ product.imgUrl }}" alt="">
+            </div>
+        </div>
+        <div class="product__details-container col-12 col-lg-6">
+            <div class="product__details product-details container-fluid d-flex flex-column align-items-start  ms-4">
+                <h2 class="product-details__title py-4">{{product.name}}</h2>
+                <p class="product-details__description fs-5 " id="description">{{ product.description }} </p>
+                <a (click)="readMore($event)" type="button" class="d-none d-lg-block">Lire la suite</a>
+                <div class="h-100 d-flex flex-column justify-content-end">         
+                    <p class="product-details__price fw-bold fs-4">{{ product.price }} €</p>           
+                    <button class="product-details__add-to-cart btn btn-primary" type="button">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

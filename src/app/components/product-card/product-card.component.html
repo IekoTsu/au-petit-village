@@ -1,0 +1,11 @@
+
+<div class="product-card card w-100 h-100" >
+    <a class="product-card__link" (click)="navigateToProduct()" type="button" >
+      <img src="{{product.imgUrl}}" class="product-card__image card-img-top" alt="{{ product.imgAlt }}">
+    </a>
+    <div class="product-card__body card-body d-flex flex-column align-items-start">
+      <h5 class="product-card__title card-title">{{product.name}}</h5>
+      <p class="product-card__price card-text fw-bold fs-4 ">{{ product.price }} €</p>
+      <a (click)="navigateToProduct()" class="product-card__button btn btn-primary mt-auto">Acheter maintenant</a>
+    </div>
+  </div> 

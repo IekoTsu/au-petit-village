@@ -1,0 +1,14 @@
+.header__logo {
+    width: 192px;
+    height: auto;
+}
+
+.nav-link{
+    font-size: larger;
+    font-weight: 600;
+}
+
+nav{
+    background: rgb(249,208,163);
+    background: linear-gradient(137deg, rgba(249,208,163,0.7065753154574133) 50%, rgba(253,217,11,0.6592567034700316) 100%);
+}

@@ -1,0 +1,25 @@
+.main__article{
+    max-width: 700px;
+    background: rgb(249,208,163);
+    background: linear-gradient(90deg, rgba(249,208,163,1) 98%, rgba(218,0,30,0.6119380914826498) 100%);
+    padding: 20px;
+    box-shadow: 10px 10px 50px 1px;
+}
+
+.main__article.history{
+    border-radius: 0 15px 15px 0;
+}
+
+.main__article.mission{
+    border-radius: 15px 0 0 15px;
+    background: linear-gradient(270deg, rgba(249,208,163,1) 98%, rgba(218,0,30,0.6119380914826498) 100%);
+}
+
+.main__article.engagement{
+    border-radius: 0 15px 15px 0;    
+}
+
+.main__section{
+    background: url(/assets/img/logo-au-petit-villageV2.png) center no-repeat;
+    background-size: 800px ;
+}
